@@ -1,0 +1,65 @@
+/* Wrapper video agar responsif */
+.video-wrapper {
+   position: relative;
+   width: 100%;
+   padding-bottom: 42.85%; /* Ratio 21:9 = 9/21 × 100 */
+   height: 0;
+   overflow: hidden;
+   background: #000;
+}
+
+/* Iframe full ke dalam wrapper */
+.video-wrapper iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+
+/* Jika mau tablet & PC versi full tinggi tertentu (optional) */
+@media (min-width: 768px) {
+   .video-wrapper {
+       padding-bottom: 42.85%; /* tetap 21:9 */
+   }
+   nav a{
+      padding-right: 1px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .video-wrapper {
+       padding-bottom: 42.85%; /* tetap 21:9 */
+   }
+}
+
+
+
+
+/* css navbar */
+
+nav a {
+   color: #ddd;
+   padding: 8px 12px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+nav a:hover {
+   color: white;
+}
+
+nav a.active {
+   color: #ffffff;
+   font-weight: bold;
+  
+   border-radius: 5px;
+}
+
+#home-nav{
+  
+   margin-right: -1.5rem;
+}
+
+ 

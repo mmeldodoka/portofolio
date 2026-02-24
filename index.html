@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/utama.css" />
+    <title>Meldo Doka</title>
+    <link
+      href="https://65e895a51454bb14d276f890--rad-caramel-efe4a8.netlify.app/assets/meldo-Deiz24FQ.jpg"
+      rel="icon"
+      type="image/png"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <div id="head"></div>
+  </head>
+  <style>
+    
+    /* Styling Dasar Card */
+    .project {
+      cursor: pointer;
+      pointer-events: auto;
+    }
+
+    /* Modal Background (Overlay) */
+    .modal {
+      display: none; /* Tersembunyi secara default */
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Background gelap transparan */
+      backdrop-filter: blur(5px); /* Efek blur opsional */
+    }
+
+    /* Konten Modal */
+    .modal-content {
+      background-color: #1a1a1a; /* Sesuaikan dengan tema deting.cloud */
+      margin: 4% auto;
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 600px;
+      max-height: 80vh; /* Batas tinggi modal 80% layar */
+      overflow-y: auto; /* INI KUNCINYA: Supaya bisa di-scroll */
+      color: white;
+      position: relative;
+    }
+    
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .modal-content {
+      background-color: #1a1a1a; /* Sesuaikan dengan tema deting.cloud */
+      margin: 16% auto;
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 600px;
+      max-height: 100vh; /* Batas tinggi modal 80% layar */
+      overflow-y: auto; /* INI KUNCINYA: Supaya bisa di-scroll */
+      color: white;
+      position: relative;
+    }
+}
+
+    /* Tombol Close */
+    .close-btn {
+      position: sticky;
+      top: 0;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #aaa;
+    }
+
+    .close-btn:hover {
+      color: white;
+    }
+
+
+
+
+
+  </style>
+
+  <body>
+    <div id="navbar"></div>
+    <div id="content"></div>
+    <script>
+      const version = new Date().getTime(); // auto ganti tiap reload
+
+      // include head
+      fetch(`components/head.html?v=${version}`)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("head").innerHTML = html));
+
+      // include navbar
+      fetch(`components/navbar.html?v=${version}`)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html));
+
+      // include page
+      fetch(`pages/page-utama.html?v=${version}`)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("content").innerHTML = html));
+    </script>
+
+    <br />
+    <!-- components hobi -->
+    <div id="hobi"></div>
+
+    <!-- components project -->
+    <div id="project"></div>
+
+    <!-- components footer -->
+    <div id="footer"></div>
+
+    <br /><br />
+    <script>
+      const nocache = `?v=${Date.now()}`;
+
+      fetch("./components/hobi.html" + nocache)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("hobi").innerHTML = html));
+
+      fetch("./components/project.html" + nocache)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("project").innerHTML = html));
+
+      fetch("./components/footer.html" + nocache)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("footer").innerHTML = html));
+    </script>
+
+
+
+<script>
+fetch("./components/project.html?v=" + Date.now())
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("project").innerHTML = html;
+    initProjectModal();
+  });
+
+function initProjectModal() {
+
+  const modal1 = document.querySelector(".projectModal");
+  const modal2 = document.querySelector(".projectModal_kedua");
+  const modal3 = document.querySelector(".projectModal_ketiga");
+  const modal4 = document.querySelector(".projectModal_keempat");
+  const modal5 = document.querySelector(".projectModal_kelima");
+  const modal6 = document.querySelector(".projectModal_keenam");
+
+  // =========================
+  // OPEN MODAL
+  // =========================
+
+  window.openModal = function () {
+    if (!modal1) return;
+    modal1.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.openModal_kedua = function () {
+    if (!modal2) return;
+    modal2.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.openModal_ketiga = function () {
+    if (!modal3) return;
+    modal3.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.openModal_keempat = function () {
+    if (!modal4) return;
+    modal4.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.openModal_kelima = function () {
+    if (!modal5) return;
+    modal5.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  window.openModal_keenam = function () {
+    if (!modal6) return;
+    modal6.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  };
+
+  // =========================
+  // CLOSE SEMUA MODAL
+  // =========================
+
+  window.closeModal = function () {
+    [modal1, modal2, modal3, modal4, modal5, modal6].forEach(modal => {
+      if (modal) modal.style.display = "none";
+    });
+    document.body.style.overflow = "auto";
+  };
+
+  // =========================
+  // CLICK BACKGROUND CLOSE
+  // =========================
+
+  [modal1, modal2, modal3, modal4, modal5, modal6].forEach(modal => {
+    if (!modal) return;
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeModal();
+    });
+  });
+
+  // =========================
+  // ESC KEY CLOSE
+  // =========================
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+}
+</script>
+
+  <!-- scrip kedua -->
+
+
+  </body>
+</html>

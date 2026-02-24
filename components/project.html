@@ -1,0 +1,473 @@
+<div class="latest-posts">
+  <div class="posts-header">
+    <h2>Project Web</h2>
+  </div>
+</div>
+<div class="project-container">
+  <div class="project" onclick="openModal()">
+    <img src="./img/beranda1.JPG" alt="Deteksi Stunting Untuk Balita" />
+    <p style="color: aliceblue">Aplikasi Deteksi Stunting Untuk Balita</p>
+  </div>
+
+  <div class="project" onclick="openModal_kedua()">
+    <img src="./img/gereja.JPG" alt="Gereja GKE Pintu Elok Pontianak" />
+
+    <p style="color: aliceblue">Gereja GKE Pintu Elok Pontianak</p>
+  </div>
+  <div class="project" onclick="openModal_ketiga()">
+    <img src="./img/desa.JPG" alt="Website Desa Nanga Awin" />
+    <p style="color: aliceblue">Desa Nanga Awin</p>
+  </div>
+
+  <div class="project" onclick="openModal_keempat()">
+    <img src="./img/toko.JPG" alt="Toko Pak Ari " />
+    <p style="color: aliceblue">Toko Pak Ari</p>
+  </div>
+  <div class="project">
+    <a href="https://appbaru-44ed2.web.app/">
+      <img src="./img/odda.JPG" alt="Toko Pak Ari " />
+      <p style="color: aliceblue">Project React JS Sederhana</p>
+    </a>
+  </div>
+  <div class="project">
+    <a href="https://www.dicoding.com/certificates/07Z609QR2ZQR">
+      <img src="./img/daad.JPG" alt="Toko Pak Ari " />
+      <p style="color: aliceblue">Sertifikat Dasar Pemograman</p>
+    </a>
+  </div>
+
+  <!-- batasssssssssssssss -->
+
+  <div class="modal projectModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <h2>Detail Proyek: Deteksi Stunting</h2>
+      <img
+        src="./img/beranda1.JPG"
+        alt="Header"
+        style="width: 100%; border-radius: 10px"
+      />
+      <h4>📌 Project Overview</h4>
+      <p>
+        Sistem ini dikembangkan untuk melakukan deteksi dini status stunting
+        pada anak usia 0–60 bulan berdasarkan data usia, jenis kelamin, dan
+        tinggi badan. Aplikasi mengklasifikasikan anak ke dalam kategori
+        berikut:
+      </p>
+      <ul>
+        <li>Normal</li>
+        <li>Tinggi</li>
+        <li>Stunted</li>
+        <li>Severely Stunted</li>
+      </ul>
+      <p>
+        Sistem dirancang sebagai web-based decision support tool untuk membantu
+        proses identifikasi awal risiko stunting secara lebih cepat dan
+        terstruktur.
+      </p>
+
+      <hr />
+
+      <h4>🎯 Objective</h4>
+      <p>
+        Membangun sistem klasifikasi berbasis Machine Learning yang mampu
+        memprediksi status pertumbuhan anak menggunakan metode probabilistik dan
+        mengimplementasikannya dalam aplikasi web yang dapat digunakan secara
+        praktis.
+      </p>
+
+      <hr />
+
+      <h4>⚙️ Core Features</h4>
+
+      <h5>🔐 Authentication System</h5>
+      <ul>
+        <li>Login user</li>
+        <li>Session management</li>
+        <li>Akses sistem berbasis autentikasi</li>
+      </ul>
+
+      <h5>📊 Stunting Detection</h5>
+      <ul>
+        <li>Input data usia, jenis kelamin, dan tinggi badan</li>
+        <li>Proses klasifikasi menggunakan algoritma Naive Bayes</li>
+        <li>Perhitungan probabilitas posterior untuk menentukan kategori</li>
+      </ul>
+
+      <h5>📝 Detection History</h5>
+      <ul>
+        <li>Penyimpanan riwayat hasil deteksi</li>
+        <li>Tracking data yang telah diinput sebelumnya</li>
+      </ul>
+
+      <h5>📥 Export Result</h5>
+      <ul>
+        <li>Download hasil deteksi dalam format file</li>
+        <li>Dokumentasi hasil klasifikasi</li>
+      </ul>
+
+      <h5>📚 Educational Section</h5>
+      <ul>
+        <li>Informasi singkat mengenai stunting</li>
+        <li>Penjelasan kategori status pertumbuhan</li>
+      </ul>
+
+      <hr />
+
+      <h4>🧮 Algorithm Implementation</h4>
+      <p>
+        Sistem ini mengimplementasikan metode
+        <strong>Naive Bayes Classifier</strong>, di mana:
+      </p>
+      <ul>
+        <li>
+          Data training digunakan untuk menghitung probabilitas prior dan
+          likelihood
+        </li>
+        <li>Dilakukan perhitungan probabilitas posterior</li>
+        <li>
+          Kategori dengan probabilitas tertinggi dipilih sebagai hasil
+          klasifikasi
+        </li>
+      </ul>
+      <p>
+        Model dibangun menggunakan dataset kesehatan yang telah dikategorikan
+        berdasarkan standar pertumbuhan anak.
+      </p>
+
+      <hr />
+
+      <h4>🛠 Technology Stack</h4>
+      <ul>
+        <li>PHP (Backend Logic)</li>
+        <li>MySQL (Database Management)</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Machine Learning (Naive Bayes Algorithm)</li>
+      </ul>
+
+      <hr />
+
+      <h4>🚧 Challenges & Solutions</h4>
+
+      <h5>Challenge</h5>
+      <p>
+        Mengimplementasikan algoritma Machine Learning berbasis probabilitas ke
+        dalam sistem web dinamis menggunakan PHP.
+      </p>
+
+      <h5>Solution</h5>
+      <ul>
+        <li>Mempelajari konsep probabilitas dan cara kerja Naive Bayes</li>
+        <li>Mengonversi perhitungan statistik ke dalam logic programming</li>
+        <li>
+          Menyesuaikan model klasifikasi dengan struktur dataset kesehatan
+        </li>
+        <li>
+          Mengintegrasikan proses klasifikasi dengan sistem database dan histori
+        </li>
+      </ul>
+
+      <hr />
+
+      <h4>🎓 Key Learnings</h4>
+      <ul>
+        <li>
+          Implementasi Machine Learning tanpa framework ML (manual calculation)
+        </li>
+        <li>Pengolahan dataset kesehatan untuk klasifikasi</li>
+        <li>Integrasi algoritma probabilistik ke dalam web application</li>
+        <li>Penerapan logika matematika dalam sistem berbasis PHP</li>
+        <li>Pengembangan sistem berbasis data-driven decision support</li>
+      </ul>
+      <a href="https://deting.cloud/" class="btn-link">Kunjungi Website</a>
+    </div>
+  </div>
+  <!-- batasssssssssss -->
+  <div class="modal projectModal_kedua">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <h2>Gereja</h2>
+      <img
+        src="./img/gereja.JPG"
+        alt="Header"
+        style="width: 100%; border-radius: 10px"
+      />
+      <h4>📌 Project Overview</h4>
+      <p>
+        Website Gereja Kalimantan Evangelis (GKE) Pintu Elok Pontianak
+        dikembangkan sebagai sistem informasi gereja berbasis web yang bertujuan
+        meningkatkan transparansi informasi publik serta mempermudah proses
+        pendataan jemaat secara digital. Sistem ini membantu gereja dalam
+        menyampaikan informasi kegiatan, pengumuman, serta membuka layanan
+        pendaftaran jemaat baru secara online.
+      </p>
+
+      <hr />
+
+      <h4>🎯 Objective</h4>
+      <p>
+        Membangun sistem informasi gereja yang transparan, terstruktur, dan
+        terintegrasi untuk mendukung penyampaian informasi publik, pendataan
+        jemaat, serta proses administrasi gereja berbasis teknologi.
+      </p>
+
+      <hr />
+
+      <h4>⚙️ Core Features</h4>
+
+      <h5>👥 Public Information System</h5>
+      <ul>
+        <li>Menampilkan informasi terbaru mengenai kegiatan gereja</li>
+        <li>Pengumuman umum dan agenda pelayanan</li>
+        <li>Informasi resmi yang dapat diakses oleh jemaat dan masyarakat</li>
+      </ul>
+
+      <h5>📝 Online Registration</h5>
+      <ul>
+        <li>Pendaftaran jemaat baru secara online</li>
+        <li>Form input data jemaat</li>
+        <li>Penyimpanan data secara terstruktur di database</li>
+      </ul>
+
+      <h5>🔐 Admin Dashboard</h5>
+      <ul>
+        <li>Sistem login untuk admin</li>
+        <li>Pengelolaan data jemaat</li>
+        <li>Kontrol penuh terhadap konten website</li>
+      </ul>
+
+      <h5>📂 CRUD Management</h5>
+      <ul>
+        <li>Create, Read, Update, Delete data kegiatan gereja</li>
+        <li>Pengelolaan informasi umum</li>
+        <li>Pendataan jemaat secara langsung oleh admin</li>
+      </ul>
+
+      <hr />
+
+      <h4>🛠 Technology Stack</h4>
+      <ul>
+        <li>PHP (Backend Development)</li>
+        <li>MySQL (Database Management)</li>
+        <li>Bootstrap Framework (UI & Responsive Design)</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+
+      <hr />
+
+      <h4>🚧 Challenges & Development Experience</h4>
+      <p>
+        Dalam pengembangan sistem ini, fokus utama adalah membangun sistem CRUD
+        yang stabil dan terstruktur untuk mengelola data jemaat dan informasi
+        gereja secara real-time. Sistem dirancang agar mudah digunakan oleh
+        admin serta tetap responsif untuk pengguna umum.
+      </p>
+
+      <hr />
+
+      <h4>🎓 Key Learnings</h4>
+      <ul>
+        <li>Implementasi sistem CRUD dalam konteks organisasi gereja</li>
+        <li>Pengelolaan database untuk pendataan jemaat</li>
+        <li>Penerapan sistem login dan manajemen akses admin</li>
+        <li>Pembuatan website responsif menggunakan Bootstrap</li>
+        <li>Pemahaman alur sistem informasi berbasis organisasi</li>
+      </ul>
+
+      <a href="https://deting.cloud/" class="btn-link">Kunjungi Website</a>
+    </div>
+  </div>
+  <!-- batassssssssssssss -->
+  <div class="modal projectModal_ketiga">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <h2>Desa Nanga Awin</h2>
+      <img
+        src="./img/desa.JPG"
+        alt="Header"
+        style="width: 100%; border-radius: 10px"
+      />
+      <h4>📌 Project Overview</h4>
+      <p>
+        Website Desa Nanga Awin dikembangkan sebagai sistem informasi desa
+        berbasis web untuk mendukung transparansi informasi publik dan
+        digitalisasi pelayanan desa. Sistem ini berfungsi sebagai media
+        komunikasi resmi antara pemerintah desa dan masyarakat, serta sebagai
+        pusat dokumentasi informasi dan data desa.
+      </p>
+
+      <hr />
+
+      <h4>🎯 Objective</h4>
+      <p>
+        Menyediakan platform digital yang mampu menyampaikan informasi desa
+        secara cepat, akurat, dan mudah diakses oleh masyarakat, sekaligus
+        mendukung pengelolaan data desa secara terstruktur melalui sistem
+        berbasis teknologi.
+      </p>
+
+      <hr />
+
+      <h4>⚙️ Core Features</h4>
+
+      <h5>📢 Public Information System</h5>
+      <ul>
+        <li>Publikasi berita dan informasi terbaru desa</li>
+        <li>Pengumuman resmi pemerintah desa</li>
+        <li>Dokumentasi kegiatan desa</li>
+      </ul>
+
+      <h5>📊 Population & Village Data</h5>
+      <ul>
+        <li>Pengelolaan data penduduk</li>
+        <li>Visualisasi statistik desa</li>
+        <li>Pengarsipan data administrasi</li>
+      </ul>
+
+      <h5>🔐 Admin Dashboard</h5>
+      <ul>
+        <li>Sistem login untuk admin desa</li>
+        <li>Manajemen konten website</li>
+        <li>Kontrol penuh terhadap informasi publik</li>
+      </ul>
+
+      <h5>📂 CRUD Management</h5>
+      <ul>
+        <li>Create, Read, Update, Delete data penduduk</li>
+        <li>Pengelolaan berita dan informasi desa</li>
+        <li>Manajemen konten secara dinamis</li>
+      </ul>
+
+      <hr />
+
+      <h4>🛠 Technology Stack</h4>
+      <ul>
+        <li>PHP (Backend Development)</li>
+        <li>MySQL (Database Management)</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+
+      <hr />
+
+      <h4>🚧 Development Experience</h4>
+      <p>
+        Project ini menuntut pengelolaan banyak modul CRUD dalam satu sistem
+        terintegrasi, termasuk pengelolaan berita, data penduduk, serta
+        informasi publik lainnya. Struktur database dirancang agar efisien dan
+        mudah dikembangkan untuk kebutuhan jangka panjang.
+      </p>
+
+      <hr />
+
+      <h4>🎓 Key Learnings</h4>
+      <ul>
+        <li>Membangun sistem informasi publik berbasis web</li>
+        <li>Mengelola banyak modul CRUD dalam satu aplikasi</li>
+        <li>Perancangan struktur database untuk sistem desa</li>
+        <li>Pengembangan dashboard admin yang dinamis</li>
+        <li>Penerapan konsep digitalisasi layanan masyarakat</li>
+      </ul>
+
+      <a href="https://deting.cloud/" class="btn-link">Kunjungi Website</a>
+    </div>
+  </div>
+  <!-- batassssssssssssss -->
+  <div class="modal projectModal_keempat">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <h2>Toko Pak Ari</h2>
+      <img
+        src="./img/toko.JPG"
+        alt="Header"
+        style="width: 100%; border-radius: 10px"
+      />
+      <h4>📌 Project Overview</h4>
+      <p>
+        Website Toko Kelontong Pak Ari dikembangkan sebagai sistem informasi dan
+        manajemen penjualan berbasis web untuk membantu digitalisasi usaha kecil
+        (UMKM). Sistem ini memudahkan pengelolaan stok barang, penyajian
+        informasi harga, serta pencatatan transaksi secara lebih terstruktur dan
+        efisien.
+      </p>
+
+      <hr />
+
+      <h4>🎯 Objective</h4>
+      <p>
+        Membangun sistem penjualan dan manajemen stok berbasis web yang mampu
+        membantu pemilik toko dalam mengontrol persediaan barang, menyampaikan
+        informasi harga kepada pelanggan, serta mendukung proses digitalisasi
+        usaha secara sederhana dan efektif.
+      </p>
+
+      <hr />
+
+      <h4>⚙️ Core Features</h4>
+
+      <h5>📦 Inventory Management</h5>
+      <ul>
+        <li>Pengelolaan data barang</li>
+        <li>Pemantauan stok barang secara real-time</li>
+        <li>Update otomatis jumlah stok setelah transaksi</li>
+      </ul>
+
+      <h5>💰 Product & Pricing Information</h5>
+      <ul>
+        <li>Menampilkan daftar produk beserta harga</li>
+        <li>Informasi detail mengenai barang</li>
+        <li>Kategori produk untuk memudahkan pencarian</li>
+      </ul>
+
+      <h5>🧾 Transaction Support</h5>
+      <ul>
+        <li>Pencatatan transaksi penjualan</li>
+        <li>Perhitungan total harga otomatis</li>
+        <li>Penyimpanan riwayat transaksi</li>
+      </ul>
+
+      <h5>📂 CRUD Management</h5>
+      <ul>
+        <li>Create, Read, Update, Delete data barang</li>
+        <li>Pengelolaan kategori produk</li>
+        <li>Manajemen data penjualan</li>
+      </ul>
+
+      <hr />
+
+      <h4>🛠 Technology Stack</h4>
+      <ul>
+        <li>PHP (Backend Development)</li>
+        <li>MySQL (Database Management)</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+
+      <hr />
+
+      <h4>🚧 Development Experience</h4>
+      <p>
+        Project ini berfokus pada implementasi sistem CRUD yang terintegrasi
+        dengan manajemen stok. Struktur database dirancang untuk menjaga
+        konsistensi data antara stok barang dan transaksi penjualan. Sistem
+        dibuat agar mudah digunakan oleh pemilik usaha tanpa latar belakang
+        teknis.
+      </p>
+
+      <hr />
+
+      <h4>🎓 Key Learnings</h4>
+      <ul>
+        <li>Mengembangkan sistem manajemen stok berbasis web</li>
+        <li>Mengelola relasi database antara produk dan transaksi</li>
+        <li>Penerapan digitalisasi dalam konteks UMKM</li>
+        <li>Pemahaman alur bisnis sederhana dalam sistem penjualan</li>
+        <li>Pengembangan banyak modul CRUD dalam satu sistem terintegrasi</li>
+      </ul>
+
+      <a href="https://deting.cloud/" class="btn-link">Kunjungi Website</a>
+    </div>
+  </div>
+</div>
